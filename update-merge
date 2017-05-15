@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+let fs = require('fs'),
+    path = require('path'),
+    gfwlist = fs.readFileSync('gfwlist.txt', 'utf-8'),
+    dir = 'additions',
+    additions = fs.readdirSync(dir);
+
+gfwlist = Buffer.from(gfwlist, 'base64');
+
+additions.forEach(file => {
+    let full = path.join(dir, file),
+        stat = fs.lstatSync(full);
+
+    if (stat.isFile()) {
+        let content = fs.readFileSync(full, 'utf-8');
+        content = gfwlist + '\n' + content;
+
+        console.log(`Writing ${file}...`);
+
+        content = Buffer.from(content).toString('base64');
+        fs.writeFileSync(file, content);
+    }
+});

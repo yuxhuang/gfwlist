@@ -1,0 +1,37 @@
+!PAC for Canada TV Viewers proxied to USA
+! Put user rules line by line in this file.
+! See https://adblockplus.org/en/filter-cheatsheet
+
+! Amazon Video
+||amazon.com^
+||ssl-images-amazon.com^
+||media-amazon.com^
+
+! Direct TV NOW
+||directvnow.com^
+||akamaized.net^
+||dtvn-discovery-sponsored.akamaized.net^
+||maxmind.com^
+||quickplay.com^
+||akamaihd.net^
+||nr-data.net^
+||inq.com^
+||newrelic.com^
+||imrworldwide.com^
+
+! Netflix
+||netflix.com^
+||nflxvideo.net^
+||nflxext.com^
+||nflximg.net^
+
+! Whitelist for Youtube TV
+@@||youtube.com^
+@@||googlevideo.com^
+@@||googleapis.com^
+@@||gstatic.com^
+@@||googleusercontent.com^
+@@||ytimg.com^
+@@||ggpht.com^
+
+
