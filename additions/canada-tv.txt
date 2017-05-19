@@ -25,6 +25,10 @@
 ||nflxext.com^
 ||nflximg.net^
 
+! Filmstruck
+||filmstruck.com^
+||turner.com^
+
 ! Whitelist for Youtube TV
 @@||youtube.com^
 @@||googlevideo.com^
